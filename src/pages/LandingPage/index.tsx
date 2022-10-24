@@ -16,33 +16,33 @@ export function LadingPage () {
 
   return (
     <main>
-      <section className='flex  lg:bg-black'>
+      <section className='flex bg-gradient-to-l from-green-400 via-black to-black'>
         <div className='flex flex-col lg:py-16'>
           <h1 className='lg:text-8xl lg:font-black lg:text-white  lg:px-8'>BLACK WEEK</h1>
           <img className='lg:px-8' src="./images/Suzano_2022.png" alt="Suzano 2022" />
           <h2 className='lg:text-white lg:text-4xl lg:py-4 bg-gradient-to-r from-green-500 to-transparent lg:px-8 lg:my-8'>
             Dia 19 até 24 de Novembro
           </h2>
-          <div>
-            <span>
+          <div className=' lg:px-16'>
+            <span className='text-white'>
               Inscreva-se para economizar no papel e acompanhar todas as novidades do período com as melhores ofertas do ano!
             </span>
             {!isSubmitting ? (
-              <form onSubmit={handleSubmit(handleSubscription)}>
-                <fieldset>
-                  <input type="text" placeholder='Nome' {...register('name')} />
-                  <input type="email" placeholder='Email' {...register('email')} />
-                  <input type="text" placeholder='Telefone' {...register('phone')} />
-                  <select {...register('niche')} placeholder='Seguimento'>
+              <form className='lg:pt-4 lg:flex lg:flex-col' onSubmit={handleSubmit(handleSubscription)}>
+                <fieldset className='lg:flex lg:flex-col lg:gap-2'>
+                  <input type="text" placeholder='Nome' {...register('name')} className='lg:p-2 lg:rounded-md' />
+                  <input type="email" placeholder='Email' {...register('email')} className='lg:p-2 lg:rounded-md' />
+                  <input type="text" placeholder='Telefone' {...register('phone')} className='lg:p-2 lg:rounded-md' />
+                  <select {...register('niche')} placeholder='Seguimento' className='lg:p-2 lg:rounded-md'>
                     <option value="empresa">Empresa</option>
                     <option value="grafica">Gráfica</option>
                     <option value="papelaria">Papelaria</option>
                     <option value="pessoafisica">Pessoa Física</option>
                   </select>
+                  <button type="submit" className='bg-[#FFF002] lg:p-2 lg:rounded-md lg:font-bold'>
+                    EU QUERO DESCONTO!
+                  </button>
                 </fieldset>
-                <button type="submit">
-                  EU QUERO DESCONTO!
-                </button>
               </form>) : (
               <svg className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
               </svg>

@@ -1,11 +1,8 @@
 import './main.css';
+import { LadingPage } from './pages/LandingPage';
 
 function App () {
-  return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
-  );
+  return <LadingPage />;
 }
 
 export default App;

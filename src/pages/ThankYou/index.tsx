@@ -6,6 +6,13 @@ export function ThankYou () {
     gtmId: 'GTM-WBWQND6',
     events: {
       conversion: 'pageview'
+    },
+    dataLayer: {
+      event: 'pageview',
+      page: {
+        url: window.location.href,
+        title: 'conversão black week'
+      }
     }
   });
 

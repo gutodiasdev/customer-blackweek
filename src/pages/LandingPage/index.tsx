@@ -69,8 +69,8 @@ export function LadingPage () {
         <section className='bg-[#FFF002] py-16 xl:py-24 text-3xl'>
           Countdown
         </section>
-        <section className='bg-[#0D1813] text-white py-16 xl:py-32 xl:text-center'>
-          <div className='px-4 xl:px-56 xl:grid xl:grid-cols-2 text-left'>
+        <section className='bg-[#0D1813] text-white py-16 xl:py-32 xl:text-center flex flex-col items-center px-4'>
+          <div className=' xl:px-56 xl:grid xl:grid-cols-2 text-left'>
             <div>
               <h3 className='text-[#34B456] text-5xl font-semibold xl:text-6xl xl:font-bold'>LOJA VIRTUAL<br></br> SUZANO</h3>
               <p className='text-3xl py-8 xl:text-4xl xl:py-8'>O <span className='text-[#FFF002]'>cupom de desconto</span> da Black Week Suzano 2022, vai ser disponibilizado exclusivamente para nosso ecommerce</p>
@@ -79,8 +79,8 @@ export function LadingPage () {
               <img src="./images/monitor.png" alt="Loja Virtual Suzano" />
             </div>
           </div>
-          <h4 className='text-3xl py-8 lg:text-center px-4 xl:text-4xl xl:py-8'>Cadastre-se em nossa Loja Virtual para aproveitar todas as ofertas de fim de ano!</h4>
-          <button className='bg-[#FFF002] p-4 ml-6 lg:p-4 rounded-md font-bold text-black xl:text-4xl xl:mt-8'>
+          <h4 className='text-3xl py-8 lg:text-center lg:w-[35%] xl:text-4xl xl:py-8'>Cadastre-se em nossa Loja Virtual para aproveitar todas as ofertas de fim de ano!</h4>
+          <button className='bg-[#FFF002] p-4 lg:p-4 rounded-md lg:w-[50%] font-bold text-black xl:text-4xl xl:mt-8'>
             <a href="https://loja.suzano.com.br/" target='_blank' rel="noreferrer">
               QUERO ME CADASTRAR NO ECOMMERCE!
             </a>
@@ -218,10 +218,10 @@ export function LadingPage () {
 
         <section className='bg-[#0D1813] text-center xl:text-4xl  text-2xl px-8 py-16 text-white xl:py-32'>
           <h3 className='xl:pb-8'>Você pode entrar em contato conosco pelo chat ou através de nossos telefones</h3>
-          <div className='xl:text-3xl text-xl py-8'>
-            <p>Whatsapp: (11) 4000-1222</p>
-            <p>Regiões Metropolitanas: 4000-1222</p>
-            <p>Demais localidades: 0800 9411 222</p>
+          <div className='xl:text-3xl text-2xl py-8'>
+            <p>Whatsapp:<br></br> (11) 4000-1222</p>
+            <p>Regiões Metropolitanas:<br></br> 4000-1222</p>
+            <p>Demais localidades: <br></br> 0800 9411 222</p>
           </div>
         </section>
 

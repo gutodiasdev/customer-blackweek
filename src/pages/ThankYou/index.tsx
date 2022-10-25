@@ -1,22 +1,6 @@
-import TagManager from 'react-gtm-module';
 import { Helmet } from 'react-helmet';
-
-TagManager.initialize({
-  gtmId: 'GTM-WBWQND6',
-  events: {
-    conversion: 'pageview'
-  },
-  dataLayer: {
-    event: 'pageview',
-    page: {
-      url: window.location.href,
-      title: 'conversão black week'
-    }
-  }
-});
-
-
 export function ThankYou () {
+
   return (
     <>
       <Helmet>

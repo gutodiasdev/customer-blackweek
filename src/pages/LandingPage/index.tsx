@@ -103,20 +103,20 @@ export function LadingPage () {
             <h4 className='text-[#FFF002] text-2xl xl:text-3xl font-bold'>Principais características: </h4>
             <div className='grid grid-cols-2 gap-4 py-8 xl:flex xl:justify-between xl:py-16 xl:pr-32 text-black'>
               <div className='bg-[#FFF002] p-8 rounded-md font-bold flex flex-col justify-items-center justify-between shadow-lg shadow-[#FFF00275]'>
-                <img className='w-[100px] h-[100px] mx-auto' src="./images/icons/printer.png" alt="Impressora" />
-                <h5 className='pt-4 text-xl xl:text-xl text-center'>Não atola</h5>
+                <img className='w-[100px] h-[100px] mx-auto' src="./images/new-icons/nao-atola.webp" alt="Impressora" />
+                {/* <h5 className='pt-4 text-xl xl:text-xl text-center'>Não atola</h5> */}
               </div>
               <div className='bg-[#FFF002] p-8 rounded-md font-bold flex flex-col justify-items-center justify-between shadow-lg shadow-[#FFF00275]'>
-                <img className='w-[100px] h-[100px] mx-auto' src="./images/icons/paper-stack.png" alt="Impressora" />
-                <h5 className='pt-4 text-xl xl:text-xl text-center'>Resiste mais</h5>
+                <img className='w-[100px] h-[100px] mx-auto' src="./images/new-icons/resiste-mais.webp" alt="Impressora" />
+                {/* <h5 className='pt-4 text-xl xl:text-xl text-center'>Resiste mais</h5> */}
               </div>
               <div className='bg-[#FFF002] p-8 rounded-md font-bold flex flex-col justify-items-center justify-between shadow-lg shadow-[#FFF00275]'>
-                <img className='w-[100px] h-[100px] mx-auto' src="./images/icons/fountain-pen-close-up.png" alt="Impressora" />
-                <h5 className='pt-4 text-xl xl:text-xl text-center'>Não borra</h5>
+                <img className='w-[100px] h-[100px] mx-auto' src="./images/new-icons/nao-borra.webp" alt="Impressora" />
+                {/* <h5 className='pt-4 text-xl xl:text-xl text-center'>Não borra</h5> */}
               </div>
               <div className='bg-[#FFF002] p-8 rounded-md font-bold flex flex-col justify-items-center justify-between shadow-lg shadow-[#FFF00275]'>
-                <img className='w-[100px] h-[100px] mx-auto' src="./images/icons/energia-sustentavel.png" alt="Impressora" />
-                <h5 className='pt-4 text-xl xl:text-xl text-center'>Sustentável</h5>
+                <img className='w-[100px] h-[100px] mx-auto' src="./images/new-icons/sustentavel.webp" alt="Impressora" />
+                {/* <h5 className='pt-4 text-xl xl:text-xl text-center'>Sustentável</h5> */}
               </div>
             </div>
           </div>
@@ -138,20 +138,20 @@ export function LadingPage () {
             <h4 className='text-[#FFF002] text-2xl xl:text-3xl font-bold'>Principais características: </h4>
             <div className='grid grid-cols-2 gap-4 py-8 xl:flex xl:justify-between xl:py-16 xl:pr-32 text-black'>
               <div className='bg-[#FFF002] p-8 rounded-md font-bold flex flex-col justify-items-center justify-between shadow-lg shadow-[#FFF00275]'>
-                <img className='w-[100px] h-[100px] mx-auto' src="./images/icons/papeis-empilhados-de-papelaria.png" alt="Alta gramatura" />
-                <h5 className='xl:pt-4 xl:text-xl'>Alta gramatura</h5>
+                <img className='w-[100px] h-[100px] mx-auto' src="./images/new-icons/alta-gramatura.webp" alt="Alta gramatura" />
+                {/* <h5 className='xl:pt-4 xl:text-xl'>Alta gramatura</h5> */}
               </div>
               <div className='bg-[#FFF002] p-8 rounded-md font-bold flex flex-col justify-items-center justify-between shadow-lg shadow-[#FFF00275]'>
-                <img className='w-[100px] h-[100px] mx-auto' src="./images/icons/impressora.png" alt="Impressão fosca" />
-                <h5 className='xl:pt-4 xl:text-xl'>Impressão fosca</h5>
+                <img className='w-[100px] h-[100px] mx-auto' src="./images/new-icons/impressora.webp" alt="Impressão fosca" />
+                {/* <h5 className='xl:pt-4 xl:text-xl'>Impressão fosca</h5> */}
               </div>
               <div className='bg-[#FFF002] p-8 rounded-md font-bold flex flex-col justify-items-center justify-between shadow-lg shadow-[#FFF00275]'>
-                <img className='w-[100px] h-[100px] mx-auto' src="./images/icons/nao-e-igual-a.png" alt="Acabamento diferenciado" />
-                <h5 className='xl:pt-4 xl:text-xl'>Acabamento <br /> diferenciado</h5>
+                <img className='w-[100px] h-[100px] mx-auto' src="./images/new-icons/acabamento-diferenciado.webp" alt="Acabamento diferenciado" />
+                {/* <h5 className='xl:pt-4 xl:text-xl'>Acabamento <br /> diferenciado</h5> */}
               </div>
               <div className='bg-[#FFF002] p-8 rounded-md font-bold flex flex-col justify-items-center justify-between shadow-lg shadow-[#FFF00275]'>
-                <img className='w-[100px] h-[100px] mx-auto' src="./images/icons/seta-superior-direita.png" alt="Superior aos concorrentes" />
-                <h5 className='xl:pt-4 xl:text-xl'>Superior aos <br /> concorrentes</h5>
+                <img className='w-[100px] h-[100px] mx-auto' src="./images/new-icons/superiro-aos-concorrentes.webp" alt="Superior aos concorrentes" />
+                {/* <h5 className='xl:pt-4 xl:text-xl'>Superior aos <br /> concorrentes</h5> */}
               </div>
             </div>
           </div>
@@ -216,7 +216,7 @@ export function LadingPage () {
 
         </section>
 
-        <section className='bg-[#0D1813] xl:text-center xl:text-4xl  text-2xl px-8 py-16 text-white xl:py-32'>
+        <section className='bg-[#0D1813] text-center xl:text-4xl  text-2xl px-8 py-16 text-white xl:py-32'>
           <h3 className='xl:pb-8'>Você pode entrar em contato conosco pelo chat ou através de nossos telefones</h3>
           <div className='xl:text-3xl text-xl py-8'>
             <p>Whatsapp: (11) 4000-1222</p>

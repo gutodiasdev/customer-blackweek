@@ -63,7 +63,7 @@ export function LadingPage () {
             </div>
           </div>
           <div className='flex justify-end w-full'>
-            <img className='mb-[-5px] lg:mb-[-8px] xl:mb-[-10px]' src="./images/hero-image.webp" alt="Desconto" />
+            <img className=' px-4 mb-[-5px] lg:mb-[-8px] xl:mb-[-10px]' src="./images/hero-image.webp" alt="Desconto" />
           </div>
         </section>
         <section className='bg-[#FFF002] py-16 xl:py-24 text-3xl'>

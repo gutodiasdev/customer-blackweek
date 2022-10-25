@@ -19,7 +19,7 @@ const subscriptionSchema = yup.object().shape({
 
 export function LadingPage () {
   const navigate = useNavigate();
-  const { register, handleSubmit, formState: { isSubmitting, errors } } = useForm<SubmitProps>({
+  const { register, handleSubmit, formState: { errors } } = useForm<SubmitProps>({
     resolver: yupResolver(subscriptionSchema)
   });
 

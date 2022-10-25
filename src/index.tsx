@@ -7,7 +7,7 @@ import App from './App';
 import { ThankYou } from './pages/ThankYou';
 
 TagManager.initialize({
-  gtmId: 'AW-623354787'
+  gtmId: 'GTM-WBWQND6'
 });
 
 const root = ReactDOM.createRoot(

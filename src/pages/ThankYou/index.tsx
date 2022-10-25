@@ -1,9 +1,9 @@
-import TagManager from 'react-gtm-module';
+// import TagManager from 'react-gtm-module';
 import { Helmet } from 'react-helmet';
 
-TagManager.initialize({
-  gtmId: 'AW-623354787/L6qwCPzLpIAYEKPHnqkC'
-});
+// TagManager.initialize({
+//   gtmId: 'AW-623354787/L6qwCPzLpIAYEKPHnqkC'
+// });
 
 export function ThankYou () {
   return (

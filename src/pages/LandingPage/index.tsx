@@ -1,6 +1,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { yupResolver } from '@hookform/resolvers/yup';
+import CountDown from 'count-down-react';
 import * as yup from 'yup';
 
 type SubmitProps = {
@@ -8,6 +9,19 @@ type SubmitProps = {
   email: string;
   phone: string;
   niche: string;
+};
+
+type CountdownProps = {
+  days: string;
+  hours: string;
+  minutes: string;
+  seconds: string;
+};
+
+const countdownRenderer = ({ days, hours, minutes, seconds }: CountdownProps) => {
+  <>
+    {days} d {hours} h, {minutes} m, {seconds} s
+  </>;
 };
 
 const subscriptionSchema = yup.object().shape({
@@ -35,7 +49,7 @@ export function LadingPage () {
             <h1 className='text-5xl font-semibold text-white lg:text-8xl xl:text-9xl lg:font-black px-4 lg:px-8 xl:px-16'>BLACK WEEK</h1>
             <img className='px-4 lg:px-8 xl:px-16' src="./images/Suzano_2022.png" alt="Suzano 2022" />
             <h2 className='px-4 font-semibold text-white text-2xl my-4 lg:text-4xl xl:text-5xl lg:py-4 bg-gradient-to-r from-green-500 to-transparent lg:px-8 lg:my-8 xl:px-16 xl:font-bold'>
-              Dia 19 até 24 de Novembro
+              Dia 18 até 24 de Novembro
             </h2>
             <div className='px-4 lg:px-16 xl:px-32'>
               <span className='text-white xl:text-3xl'>
@@ -67,7 +81,7 @@ export function LadingPage () {
           </div>
         </section>
         <section className='bg-[#FFF002] py-16 xl:py-24 text-3xl'>
-          Countdown
+          <CountDown date={Date.now() + 10000} renderer={countdownRenderer} />
         </section>
         <section className='bg-[#0D1813] text-white py-16 xl:py-32 xl:text-center flex flex-col items-center px-4'>
           <div className=' xl:px-56 xl:grid xl:grid-cols-2 text-left'>

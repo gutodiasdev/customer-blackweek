@@ -3516,11 +3516,6 @@ cosmiconfig@^7.0.0:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
-count-down-react@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/count-down-react/-/count-down-react-1.0.12.tgz#dee9c94007e0bc713fa2aa91aac54a701b509630"
-  integrity sha512-Eem6yTxNQo7sjw/10a6H0XV/WR4UeQQ3RpjHtBIgr8ukEkEWraO0ul08IG13uSUrDIhQAKNLNVvDJGaUToqPnA==
-
 create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
@@ -4069,6 +4064,11 @@ duplexer@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.2.tgz#3abe43aef3835f8ae077d136ddce0f276b0400e6"
   integrity sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==
+
+dynamic-countdown@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/dynamic-countdown/-/dynamic-countdown-1.4.2.tgz#20aad81652ea99f00150b8d46a6eb764743c626b"
+  integrity sha512-hoa+4hIzEb/+8W/rOnMyMXYgleFEyb+dXEqMJRn9CAXhEuHNCPq0GfnYdF97BSPfz2JcNgz8WbbR2WZSP4y7Og==
 
 easy-bem@^1.1.1:
   version "1.1.1"
@@ -7904,6 +7904,13 @@ react-app-polyfill@^3.0.0:
     raf "^3.4.1"
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
+
+react-countdown@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/react-countdown/-/react-countdown-2.3.3.tgz#e80ca7a7e3f4dc21b8f754d52c656a45d32550da"
+  integrity sha512-z/AS1ccdb45Fd8/1AGt9m2UIJvPUZHViL+EfWyJsI7H+99aUFnDIhN9NTGtM4n5OhhYH+Ne1UvX/u1Ejw6RGzg==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-dev-utils@^12.0.1:
   version "12.0.1"

@@ -1,7 +1,7 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { yupResolver } from '@hookform/resolvers/yup';
-import CountDown from 'count-down-react';
+import Countdown from 'react-countdown';
 import * as yup from 'yup';
 
 type SubmitProps = {
@@ -11,18 +11,6 @@ type SubmitProps = {
   niche: string;
 };
 
-type CountdownProps = {
-  days: string;
-  hours: string;
-  minutes: string;
-  seconds: string;
-};
-
-const countdownRenderer = ({ days, hours, minutes, seconds }: CountdownProps) => {
-  <>
-    {days} d {hours} h, {minutes} m, {seconds} s
-  </>;
-};
 
 const subscriptionSchema = yup.object().shape({
   name: yup.string().required('Nome é obrigatório'),
@@ -80,9 +68,11 @@ export function LadingPage () {
             <img className=' px-4 mb-[-5px] lg:mb-[-8px] xl:mb-[-10px]' src="./images/hero-image.webp" alt="Desconto" />
           </div>
         </section>
-        <section className='bg-[#FFF002] py-16 xl:py-24 text-3xl'>
-          <CountDown date={Date.now() + 10000} renderer={countdownRenderer} />
+
+        <section className='bg-[#FFF002] py-16 xl:py-24 text-6xl lg:text-9xl flex justify-center'>
+          <Countdown date={'2022-11-18T00:00:00'} />
         </section>
+
         <section className='bg-[#0D1813] text-white py-16 xl:py-32 xl:text-center flex flex-col items-center px-4'>
           <div className=' xl:px-56 xl:grid xl:grid-cols-2 text-left'>
             <div>
@@ -94,11 +84,6 @@ export function LadingPage () {
             </div>
           </div>
           <h4 className='text-3xl py-8 lg:text-center lg:w-[35%] xl:text-4xl xl:py-8'>Cadastre-se em nossa Loja Virtual para aproveitar todas as ofertas de fim de ano!</h4>
-          <button className='bg-[#FFF002] p-4 lg:p-4 rounded-md lg:w-[50%] font-bold text-black xl:text-4xl xl:mt-8'>
-            <a href="https://loja.suzano.com.br/" target='_blank' rel="noreferrer">
-              QUERO ME CADASTRAR NO ECOMMERCE!
-            </a>
-          </button>
         </section>
 
         <img className='absolute xl:mt-[-72px]' src="./images/faixa.png" alt="Black Week Suzano 2022" />

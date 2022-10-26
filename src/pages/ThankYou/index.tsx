@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,6 +9,15 @@ export function ThankYou () {
   const handleBackToHome = () => {
     navigate('/');
   };
+
+  useEffect(() => {
+    TagManager.initialize({
+      gtmId: 'GTM-KLFRFSR',
+      events: {
+        inscricao_lead_black_friday: true
+      }
+    });
+  });
 
   return (
     <>

@@ -39,7 +39,7 @@ export function ThankYou () {
         </div>
         <div className='flex flex-col justify-center gap-16 bg-black h-screen w-full'>
           <button className='bg-[#FFF002] p-4 lg:p-4 rounded-md lg:w-[60%] font-bold text-black xl:text-4xl xl:mt-8'>
-            <a href="https://loja.suzano.com.br/suzano/pt/login?utm_source=google_ads&utm_medium=lp_black_friday&utm_campaign=ja_sou_cliente_suzano" target='_blank' rel="noreferrer">
+            <a href="https://loja.suzano.com.br/suzano/pt/login?utm_source=google_ads&utm_medium=lp_black_friday_cadastro&utm_campaign=quero_me_cadastrar" target='_blank' rel="noreferrer">
               JÁ SOU CLIENTE, QUERO IR ÀS COMPRAS
             </a>
           </button>

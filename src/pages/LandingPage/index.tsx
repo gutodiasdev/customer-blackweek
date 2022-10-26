@@ -64,9 +64,9 @@ export function LadingPage () {
                   <input type="text" placeholder='Telefone com DDD' {...register('phone')} className='p-4 rounded-md' />
                   {errors.phone ? (<span className='text-red-400'>{errors.phone.message}</span>) : null}
                   <select {...register('niche')} placeholder='Seguimento' className='p-4 rounded-md'>
+                    <option value="papelaria">Papelaria</option>
                     <option value="empresa">Empresa</option>
                     <option value="grafica">Gráfica</option>
-                    <option value="papelaria">Papelaria</option>
                     <option value="pessoafisica">Pessoa Física</option>
                   </select>
                   <button type="submit" className='bg-[#FFF002] p-4 lg:p-2 rounded-md font-bold'>

@@ -11,20 +11,14 @@ export function ThankYou () {
   };
 
   const tagManagerArgs = {
-    dataLayer: {
-      inscricaoBlackWeek: true,
-    },
-    dataLayerName: 'PageDataLayer'
+    gtmId: 'GTM-KLFRFSR',
+    events: {
+      blackweek: true
+    }
   };
 
   useEffect(() => {
-    TagManager.initialize({
-      gtmId: 'GTM-KLFRFSR',
-      events: {
-        inscricaoBlackWeek: true
-      }
-    });
-    TagManager.dataLayer(tagManagerArgs);
+    TagManager.initialize(tagManagerArgs);
   });
 
   return (

@@ -10,13 +10,21 @@ export function ThankYou () {
     navigate('/');
   };
 
+  const tagManagerArgs = {
+    dataLayer: {
+      inscricaoBlackWeek: true,
+    },
+    dataLayerName: 'PageDataLayer'
+  };
+
   useEffect(() => {
     TagManager.initialize({
       gtmId: 'GTM-KLFRFSR',
       events: {
-        inscricao_lead_black_friday: true
+        inscricaoBlackWeek: true
       }
     });
+    TagManager.dataLayer(tagManagerArgs);
   });
 
   return (

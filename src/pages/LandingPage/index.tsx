@@ -7,16 +7,12 @@ import * as yup from 'yup';
 type SubmitProps = {
   name: string;
   email: string;
-  phone: string;
-  niche: string;
 };
 
 
 const subscriptionSchema = yup.object().shape({
   name: yup.string().required('Nome é obrigatório'),
   email: yup.string().email('Você precisa inserir um email válido').required('Email é obrigatório'),
-  phone: yup.string().min(11, 'Você precisa inserir seu número com DDD').required('Telefone é obrigatório'),
-  niche: yup.string().required()
 });
 
 export function LadingPage () {
@@ -49,14 +45,6 @@ export function LadingPage () {
                   {errors.name ? (<span className='text-red-400 text-md'>{errors.name.message}</span>) : null}
                   <input type="text" placeholder='Email' {...register('email')} className='p-4 rounded-md' />
                   {errors.email ? (<span className='text-red-400 text-md'>{errors.email.message}</span>) : null}
-                  <input type="text" placeholder='Telefone com DDD' {...register('phone')} className='p-4 rounded-md' />
-                  {errors.phone ? (<span className='text-red-400'>{errors.phone.message}</span>) : null}
-                  <select {...register('niche')} placeholder='Seguimento' className='p-4 rounded-md'>
-                    <option value="papelaria">Papelaria</option>
-                    <option value="empresa">Empresa</option>
-                    <option value="grafica">Gráfica</option>
-                    <option value="pessoafisica">Pessoa Física</option>
-                  </select>
                   <button type="submit" className='bg-[#FFF002] p-4 lg:p-2 rounded-md font-bold'>
                     EU QUERO DESCONTO!
                   </button>
@@ -72,21 +60,6 @@ export function LadingPage () {
         <section className='bg-[#FFF002] py-16 xl:py-24 text-6xl lg:text-9xl flex justify-center'>
           <Countdown date={'2022-11-18T00:00:00'} />
         </section>
-
-        <section className='bg-[#0D1813] text-white py-16 xl:py-32 xl:text-center flex flex-col items-center px-4'>
-          <div className=' xl:px-56 xl:grid xl:grid-cols-2 text-left'>
-            <div>
-              <h3 className='text-[#34B456] text-5xl font-semibold xl:text-6xl xl:font-bold'>LOJA VIRTUAL<br></br> SUZANO</h3>
-              <p className='text-3xl py-8 xl:text-4xl xl:py-8'>O <span className='text-[#FFF002]'>cupom de desconto</span> da Black Week Suzano 2022, vai ser disponibilizado exclusivamente para nosso ecommerce</p>
-            </div>
-            <div className='px-8 xl:flex xl:justify-center'>
-              <img src="./images/monitor.png" alt="Loja Virtual Suzano" />
-            </div>
-          </div>
-          <h4 className='text-3xl py-8 lg:text-center lg:w-[35%] xl:text-4xl xl:py-8'>Cadastre-se em nossa Loja Virtual para aproveitar todas as ofertas de fim de ano!</h4>
-        </section>
-
-        <img className='absolute xl:mt-[-72px]' src="./images/faixa.png" alt="Black Week Suzano 2022" />
 
         <section className='bg-black text-white px-4 py-16 xl:py-40'>
           <div className='xl:px-56 xl:grid xl:grid-cols-2'>

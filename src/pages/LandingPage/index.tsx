@@ -32,7 +32,7 @@ export function LadingPage () {
   return (
     <>
       <main>
-        <section className='lg:flex bg-gradient-to-l from-green-400 via-black to-black'>
+        <section className='lg:grid lg:grid-cols-2 bg-gradient-to-l from-green-400 via-black to-black'>
           <div className='flex flex-col py-8 lg:py-16 xl:py-32 w-full'>
             <h1 className='text-5xl font-semibold text-white lg:text-8xl xl:text-9xl lg:font-black px-4 lg:px-8 xl:px-16'>BLACK WEEK</h1>
             <img className='px-4 lg:px-8 xl:px-16' src="./images/Suzano_2022.png" alt="Suzano 2022" />
@@ -64,8 +64,8 @@ export function LadingPage () {
               </form>
             </div>
           </div>
-          <div className='flex justify-end w-full'>
-            <img className=' px-4 mb-[-5px] lg:mb-[-8px] xl:mb-[-10px]' src="./images/hero-image.webp" alt="Desconto" />
+          <div className='flex justify-end'>
+            <img className='px-4 mb-[-5px] lg:mb-[-8px] xl:mb-[-10px] lg:object-contain lg:mt-auto' src="./images/hero-image.webp" alt="Desconto" />
           </div>
         </section>
 

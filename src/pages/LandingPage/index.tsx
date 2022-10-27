@@ -183,7 +183,11 @@ export function LadingPage () {
             </h2>
             <div id="accordion-collapse-body-2" className="" aria-labelledby="accordion-collapse-heading-1">
               <div className="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                <p className="text-2xl mb-2 text-gray-500 dark:text-gray-400">A Black Week é um dos principais eventos do ano e acontece sempre na semana da Black Friday em novembro. Nesse ano você terá acesso a descontos imperdíveis pela Loja Suzano!</p>
+                <p className="text-2xl mb-2 text-gray-500 dark:text-gray-400">Para aproveitar as melhores ofertas da Black Week, você deve realizar a sua inscrição no formulário no topo da página, além de efetuar o seu cadastro na Loja Suzano.
+                </p>
+                <p>
+                  Feito isso, confira o seu e-mail que estaremos informando vocês semanalmente sobre o evento, condições e o cupom de desconto!
+                </p>
               </div>
             </div>
 
@@ -195,7 +199,7 @@ export function LadingPage () {
             </h2>
             <div id="accordion-collapse-body-3" className="" aria-labelledby="accordion-collapse-heading-1">
               <div className="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                <p className="text-2xl mb-2 text-gray-500 dark:text-gray-400">A Black Week é um dos principais eventos do ano e acontece sempre na semana da Black Friday em novembro. Nesse ano você terá acesso a descontos imperdíveis pela Loja Suzano!</p>
+                <p className="text-2xl mb-2 text-gray-500 dark:text-gray-400">Esse é o período dos maiores descontos do varejo no ano, se tornando a melhor oportunidade para você comprar nossos produtos com preço baixo!</p>
               </div>
             </div>
 
@@ -207,7 +211,7 @@ export function LadingPage () {
             </h2>
             <div id="accordion-collapse-body-3" className="" aria-labelledby="accordion-collapse-heading-1">
               <div className="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-                <p className="text-2xl mb-2 text-gray-500 dark:text-gray-400">A Black Week é um dos principais eventos do ano e acontece sempre na semana da Black Friday em novembro. Nesse ano você terá acesso a descontos imperdíveis pela Loja Suzano!</p>
+                <p className="text-2xl mb-2 text-gray-500 dark:text-gray-400">Os cupons de desconto para o papel Report podem ser usados para compras de no máximo 20 caixas por pessoa. Enquanto, o cupom de desconto do Vista vai ter</p>
               </div>
             </div>
 
